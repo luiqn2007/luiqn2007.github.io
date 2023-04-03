@@ -1,0 +1,3 @@
+(function () {
+    addHead('index.html')
+})()
