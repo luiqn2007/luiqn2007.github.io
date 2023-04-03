@@ -1,0 +1,50 @@
+.gallery .content li {
+  flex-shrink: 0;
+}
+.gallery .content .image {
+  height: 100%;
+  transition: scale, 200ms;
+}
+.gallery .content .loading {
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background: gray;
+  opacity: 75%;
+}
+.gallery .content .loading > div {
+  left: 50%;
+  top: 50%;
+}
+.gallery .content .loading .progress {
+  width: 75%;
+  transform: translate(-50%, -50%);
+}
+.gallery .content .loading {
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+}
+.gallery .content li:hover {
+  z-index: 4;
+  cursor: pointer;
+}
+.gallery .content img.img-thumbnail {
+  height: 100%;
+  transition: transform 200ms;
+}
+.gallery .content img.img-thumbnail:hover {
+  transform: scale(1.2);
+}
+.gallery .show {
+  display: none;
+  background-color: rgba(0, 0, 0, 0.7);
+  text-align: center;
+}
+.gallery .show span {
+  margin: 8px;
+  cursor: pointer;
+}
+/*# sourceMappingURL=gallery.css.map */
