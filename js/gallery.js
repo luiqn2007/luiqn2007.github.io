@@ -1,5 +1,4 @@
 (function () {
-    let head = addHead('gallery.html')
     let list = document.querySelector('.gallery .content ul')
     let nav = document.querySelector('.gallery nav ul')
     let prev = nav.querySelector('.prev')
@@ -48,7 +47,7 @@
         else prev.classList.remove('disabled')
     }
     function onresize() {
-        let top = head.clientHeight
+        let top = document.querySelector('nav').clientHeight
         show.style.top = top + 'px'
         show.style.height = (window.innerHeight - top) + 'px'
     }
