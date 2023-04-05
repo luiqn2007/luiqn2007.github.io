@@ -35,6 +35,9 @@
                 imgReq.addEventListener('load', () => {
                     img.src = window.URL.createObjectURL(imgReq.response)
                 })
+                imgReq.addEventListener('error', ev => {
+                    progress.classList.add('bg-danger')
+                })
                 imgReq.send()
                 img.addEventListener('load', () => {
                     loading.style.display = 'none'
