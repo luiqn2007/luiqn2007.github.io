@@ -1,4 +1,5 @@
 {
+  "Git": {},
   "JVM": {
     "Java": {
       "Class 字节码": {
@@ -29,7 +30,6 @@
       "像素画": {},
       "blender": {}
     },
-    "Git": {},
     "Gradle": {
       "Groovy": {},
       "自定义 Gradle 插件": {}

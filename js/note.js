@@ -8,6 +8,5 @@
     })
     commonJsReq.open('get', "js/common.js", false)
     commonJsReq.send()
-    addHead('gallery.html')
-    addHead('index.html')
+    addHead('note.html')
 })()
