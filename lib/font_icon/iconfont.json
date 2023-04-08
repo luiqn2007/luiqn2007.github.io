@@ -1,0 +1,51 @@
+{
+  "id": "3840463",
+  "name": "proj",
+  "font_family": "iconfont",
+  "css_prefix_text": "icon-",
+  "description": "",
+  "glyphs": [
+    {
+      "icon_id": "34893670",
+      "name": "左箭头",
+      "font_class": "zuojiantou",
+      "unicode": "e604",
+      "unicode_decimal": 58884
+    },
+    {
+      "icon_id": "34893674",
+      "name": "右箭头",
+      "font_class": "youjiantou",
+      "unicode": "e605",
+      "unicode_decimal": 58885
+    },
+    {
+      "icon_id": "34903702",
+      "name": "001_下载",
+      "font_class": "a-001_xiazai",
+      "unicode": "e607",
+      "unicode_decimal": 58887
+    },
+    {
+      "icon_id": "34914164",
+      "name": "编辑",
+      "font_class": "bianji",
+      "unicode": "e615",
+      "unicode_decimal": 58901
+    },
+    {
+      "icon_id": "34914171",
+      "name": "普通箭头（展开）",
+      "font_class": "a-putongjiantouzhankai",
+      "unicode": "e616",
+      "unicode_decimal": 58902
+    },
+    {
+      "icon_id": "34914177",
+      "name": "全部",
+      "font_class": "quanbu",
+      "unicode": "e617",
+      "unicode_decimal": 58903
+    }
+  ]
+}

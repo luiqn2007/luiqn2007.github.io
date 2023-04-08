@@ -32,10 +32,11 @@ function addHead(active) {
     `
     nav.querySelector(`.nav-link[href="${active}"]`).classList.add('active')
     nav.classList.add('navbar', 'navbar-expand', 'bg-body-tertiary')
-    if (document.documentElement.children.length === 0) {
-        document.documentElement.append(nav)
+    let body = document.documentElement.querySelector('body')
+    if (body.children.length === 0) {
+        body.append(nav)
     } else {
-        document.documentElement.insertBefore(nav, document.documentElement.childNodes[0])
+        body.insertBefore(nav, body.childNodes[0])
     }
     return nav
 }

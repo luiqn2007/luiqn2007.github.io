@@ -1,91 +1,372 @@
 {
-  "Git": {},
+  "Git": {
+    "..id": "git",
+    "..status": 1,
+    "..progress": 0,
+    "..message": "Git 及常见在线仓库使用",
+    "..about": "https://git-scm.com/doc"
+  },
   "JVM": {
+    "..id": "jvm",
+    "..status": 0,
     "Java": {
+      "..id": "java",
+      "..status": 0,
+      "Java 更新": {
+        "..id": "java-update",
+        "..status": 3,
+        "..priority": 1,
+        "..message": "Java9 到 20 的主要语法更新"
+      },
+      "JEP": {
+        "..id": "jep",
+        "..status": 4,
+        "..priority": 5,
+        "..message": "比较感兴趣的 JEP 提案",
+        "..about": "https://openjdk.org/jeps/0"
+      },
       "Class 字节码": {
-        "ASM": {},
-        "Javassist": {},
-        "泛型获取": {}
+        "..id": "bytecode",
+        "..status": 3,
+        "..priority": 4,
+        "..message": "Class 字节码基础",
+        "ASM": {
+          "..id": "asm",
+          "..status": 3,
+          "..priority": 5,
+          "..message": "使用 ASM 编辑 Class 字节码",
+          "..about": "https://asm.ow2.io/index.html"
+        },
+        "泛型不擦除": {
+          "..id": "java-generic",
+          "..status": 3,
+          "..priority": 2,
+          "..message": "泛型在字节码中的不完全擦除与使用"
+        },
+        "INVOKEDYNAMIC": {
+          "..id": "invokedynamic",
+          "..status": 4,
+          "..priority": 3,
+          "..message": "invokedynamic 指令使用"
+        }
       },
-      "Lookup": {},
       "动态 JVM": {
-        "类加载器": {},
-        "代理": {},
-        "Java Agent": {},
-        "Instrument": {},
-        "DCEVM": {}
+        "..id": "jvm-dym",
+        "..status": 0,
+        "Javassist": {
+          "..id": "javassist",
+          "..status": 4,
+          "..priority": 5,
+          "..message": "使用 Javassist 动态编译字节码"
+        },
+        "类加载器": {
+          "..id": "classloader",
+          "..status": 4,
+          "..priority": 4,
+          "..message": "Java 类加载器"
+        },
+        "代理": {
+          "..id": "javaproxy",
+          "..status": 4,
+          "..priority": 3,
+          "..message": "Java 代理的使用方法"
+        },
+        "Java Agent": {
+          "..id": "javaagent",
+          "..status": 4,
+          "..priority": 4,
+          "..message": "允许在 main 方法前插入并执行代码"
+        },
+        "Instrument": {
+          "..id": "instrument",
+          "..status": 4,
+          "..priority": 5,
+          "..message": "监视、修改运行中的 JVM 程序"
+        },
+        "DCEVM": {
+          "..id": "dcevm",
+          "..status": 4,
+          "..priority": 5,
+          "..message": "另一种 JVM 热重载方法",
+          "..about": "http://dcevm.github.io/"
+        }
       },
-      "Javac 插件": {}
+      "Javac 插件": {
+        "..id": "javac-plugin",
+        "..status": 4,
+        "..priority": 5,
+        "..message": "Java 编译器插件"
+      }
     },
     "库": {
-      "Netty": {},
-      "Spring": {}
+      "..id": "java-lib",
+      "..status": 0,
+      "Netty": {
+        "..id": "netty",
+        "..status": 4,
+        "..priority": 3,
+        "..message": "Java 异步网络框架",
+        "..about": "https://netty.io/wiki/user-guide-for-4.x.html"
+      },
+      "Spring": {
+        "..id": "spring",
+        "..status": 4,
+        "..priority": 4,
+        "..message": "Java EE 应用框架",
+        "..about": "https://spring.io/"
+      }
     },
     "Minecraft": {
-      "Mixin": {},
-      "KubeJS": {},
-      "GeckoLib": {},
-      "DataFixerUpper": {},
-      "OpenGL": {},
-      "像素画": {},
-      "blender": {}
+      "..id": "minecraft",
+      "..status": 0,
+      "Mixin": {
+        "..id": "mc-mixin",
+        "..status": 3,
+        "..priority": 2,
+        "..message": "主要是 Mixin 的接入，相关注解及使用"
+      },
+      "GeckoLib": {
+        "..id": "geckolib",
+        "..status": 4,
+        "..priority": 4,
+        "..message": "MC 动画库",
+        "..about": "https://github.com/bernie-g/geckolib"
+      },
+      "DataFixerUpper": {
+        "..id": "mc-dfu",
+        "..status": 4,
+        "..priority": 3,
+        "..message": "用于构建、转化数据的函数式库",
+        "..about": "https://github.com/Mojang/DataFixerUpper"
+      },
+      "OpenGL": {
+        "..id": "opengl-d",
+        "..status": 2,
+        "..progress": 0,
+        "..message": "已过时但仍然好用的图形库，现归于 C++ 分类"
+      },
+      "blender": {
+        "..id": "blender",
+        "..status": 4,
+        "..priority": 4,
+        "..message": "模型构建工具"
+      }
     },
     "Gradle": {
-      "Groovy": {},
-      "自定义 Gradle 插件": {}
+      "..id": "gradle",
+      "..status": 3,
+      "..priority": 2,
+      "..message": "替代 Maven 的用于 JVM 平台且不限于 JVM 平台的构建工具",
+      "..about": "https://gradle.org/",
+      "Groovy": {
+        "..id": "groovy",
+        "..status": 4,
+        "..priority": 4,
+        "..message": "JVM 平台的动态语言，用于 Gradle 脚本",
+        "..about": "http://www.groovy-lang.org/"
+      },
+      "自定义 Gradle 插件": {
+        "..id": "gradle-plugin",
+        "..status": 3,
+        "..priority": 5,
+        "..message": "自定义 Gradle 插件"
+      }
     },
-    "Kotlin": {},
-    "Scala": {},
-    "更新信息": {
-      "Java": {},
-      "Kotlin": {}
+    "Kotlin": {
+      "..id": "kotlin",
+      "..status": 3,
+      "..priority": 3,
+      "..message": "JVM，JS，本地跨平台语言",
+      "..about": "https://kotlinlang.org/",
+      "Kotlin 更新": {
+        "..id": "kotlin-update",
+        "..status": 3,
+        "..priority": 3,
+        "..message": "从 1.3 起的基本语法更新"
+      }
+    },
+    "Scala": {
+      "..id": "scala",
+      "..status": 4,
+      "..priority": 5,
+      "..message": "又一门 JVM 平台语言，多用于大数据处理和数据分析",
+      "..about": "https://scala-lang.org/"
     }
   },
   "C#": {
-    "WPF": {},
-    "Unity": {},
-    "IL": {}
+    "..id": "c#",
+    "..status": 4,
+    "..priority": 2,
+    "..message": "C艹艹",
+    "..about": "https://learn.microsoft.com/zh-cn/dotnet/csharp/",
+    "WPF": {
+      "..id": "wpf",
+      "..status": 4,
+      "..priority": 2,
+      "..message": "C# Windows GUI 开发"
+    },
+    "Unity": {
+      "..id": "unity",
+      "..status": 4,
+      "..priority": 5,
+      "..message": "C# 游戏开发库"
+    },
+    "IL": {
+      "..id": ".net-il",
+      "..status": 4,
+      "..priority": 5,
+      "..message": ".Net 平台中间语言"
+    }
   },
   "C++ 与其他本地语言": {
-    "算法": {},
-    "模板元编程": {},
-    "编译时反射": {},
-    "OpenGL": {
-      "Vulkan": {}
+    "..id": "cpp",
+    "..status": 0,
+    "算法": {
+      "..id": "algorithm",
+      "..status": 2,
+      "..progress": 0,
+      "..message": "嗯，算法"
     },
-    "Rust": {}
+    "模板元编程": {
+      "..id": "cpp-template",
+      "..status": 4,
+      "..priority": 1,
+      "..message": "c++ 模板元编程"
+    },
+    "OpenGL": {
+      "..id": "opengl",
+      "..status": 3,
+      "..priority": 3,
+      "..message": "已过时但仍然好用的图形库",
+      "Vulkan": {
+        "..id": "vulkan",
+        "..status": 4,
+        "..priority": 5,
+        "..message": "替代 OpenGL 的新一代图形库",
+        "..about": "https://www.vulkan.org/"
+      },
+      "WebGL": {
+        "..id": "vulkan",
+        "..status": 4,
+        "..priority": 5,
+        "..message": "Web 页面的 OpenGL 应用"
+      }
+    },
+    "Rust": {
+      "..id": "cpp-reflect",
+      "..status": 3,
+      "..priority": 5,
+      "..message": "一门无垃圾收集、无指针设计的高性能语言",
+      "..about": "https://www.rust-lang.org/zh-CN/"
+    }
   },
   "HTML": {
+    "..id": "html",
+    "..status": 1,
+    "..progress": 0,
+    "..message": "嗯，HTML",
+    "..about": "https://developer.mozilla.org/zh-CN/",
     "CSS": {
-      "LESS": {},
-      "SASS": {}
+      "..id": "css",
+      "..status": 3,
+      "..priority": 0,
+      "..message": "嗯，CSS",
+      "LESS": {
+        "..id": "less",
+        "..status": 3,
+        "..priority": 1,
+        "..message": "CSS 的一个方言，支持变量、计算等",
+        "..about": "https://lesscss.com.cn/"
+      },
+      "SASS": {
+        "..id": "sass",
+        "..status": 4,
+        "..priority": 3,
+        "..message": "CSS 的另一个方言",
+        "..about": "https://www.sass.hk/"
+      }
     },
     "JavaScript": {
-      "WebAPI": {},
-      "TypeScript": {},
-      "Vue": {},
-      "Bootstrap": {},
+      "..id": "js",
+      "..status": 3,
+      "..priority": 0,
+      "..message": "嗯，JS",
+      "WebAPI": {
+        "..id": "js-web",
+        "..status": 3,
+        "..priority": 0,
+        "..message": "DOM, BOM 部分整理"
+      },
+      "TypeScript": {
+        "..id": "typescript",
+        "..status": 4,
+        "..priority": 1,
+        "..message": "微软的 JS 方言，兼容 ES6 语法的前提下提供类型检查功能",
+        "..about": "https://www.typescriptlang.org/zh/"
+      },
+      "Vue": {
+        "..id": "vue",
+        "..status": 4,
+        "..priority": 1,
+        "..message": "JS 动态页面库",
+        "..about": "https://cn.vuejs.org/"
+      },
+      "Bootstrap": {
+        "..id": "bootstrap",
+        "..status": 3,
+        "..priority": 1,
+        "..message": "CSS/JS 界面库",
+        "..about": "https://v5.bootcss.com/"
+      },
       "Node.js": {
-        "npm": {}
+        "..id": "nodejs",
+        "..status": 4,
+        "..priority": 2,
+        "..message": "允许在本地使用的 Javascript 环境",
+        "..about": "https://nodejs.org/zh-cn"
       }
     }
   },
   "操作系统": {
-    "Windows": {
-      "PowerShell": {},
-      "Win32 API": {}
+    "..id": "os",
+    "..status": 0,
+    "PowerShell": {
+      "..id": "powershell",
+      "..status": 4,
+      "..priority": 3,
+      "..message": "Windows 新命令行脚本",
+      "..about": "https://learn.microsoft.com/zh-cn/powershell/"
     },
-    "Linux": {
-      "Bash": {},
-      "包管理器": {},
-      "常用服务器工具": {}
+    "Bash": {
+      "..id": "bash",
+      "..status": 4,
+      "..priority": 3,
+      "..message": "Linux 命令行脚本",
+      "..about": "https://www.gnu.org/software/bash/manual/"
     }
   },
   "其他": {
-    "Matlab": {},
-    "Python 3": {},
+    "..id": "other",
+    "..status": 0,
+    "Matlab": {
+      "..id": "matlab",
+      "..status": 4,
+      "..priority": 5,
+      "..message": "嗯，MATLAB，计划于假期学习"
+    },
+    "Python 3": {
+      "..id": "python3",
+      "..status": 3,
+      "..priority": 3,
+      "..message": "嗯，PY",
+      "..about": "https://www.python.org/"
+    },
     "Lua": {
-      "以撒 Mod": {}
+      "..id": "matlab",
+      "..status": 4,
+      "..priority": 5,
+      "..message": "简洁高效的脚本语言",
+      "..about": "https://www.lua.org/start.html"
     }
   }
 }

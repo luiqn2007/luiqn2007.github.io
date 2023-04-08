@@ -1,9 +1,52 @@
-.lleft {
-  background-color: red;
-  height: 100px;
+.topics {
+  position: fixed;
+  right: 0;
+  max-height: 600px;
+  padding-right: 16px;
+  overflow-x: hidden;
+  overflow-y: auto;
+  vertical-align: top;
+  z-index: 5;
+  transform: translateX(80%);
+  transition: transform 200ms;
 }
 
-.rright {
-  background-color: blue;
-  height: 100px;
+.topics:hover {
+  transform: translateX(0);
+}
+
+.submenu {
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 300ms;
+}
+
+.submenu.submenu-open {
+  max-height: 600px;
+}
+
+.menu-item {
+  display: inline-block;
+  width: 100%;
+  height: 28px;
+  line-height: 28px;
+  margin: 0 8px 0 0;
+  padding-left: 8px;
+  cursor: pointer;
+  color: black;
+}
+
+.menu-item:hover > span:nth-child(2),
+.menu-item.active > span:nth-child(2) {
+  color: #0d6efd;
+}
+
+.content .display-all li {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.content .display-all .card {
+  width: 12rem;
+  margin: 8px;
 }
