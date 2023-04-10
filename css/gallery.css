@@ -2,10 +2,12 @@
   flex-shrink: 0;
 }
 .gallery .content .image {
-  height: 100%;
+  width: 180px;
+  height: 180px;
+  margin: 8px;
   transition: scale, 200ms;
 }
-.gallery .content .loading {
+.gallery .content .image .loading {
   left: 0;
   top: 0;
   width: 100%;
@@ -13,25 +15,17 @@
   background: gray;
   opacity: 75%;
 }
-.gallery .content .loading > div {
+.gallery .content .image .loading .spinner-holder {
   left: 50%;
   top: 50%;
-}
-.gallery .content .loading .progress {
-  width: 75%;
   transform: translate(-50%, -50%);
-}
-.gallery .content .loading {
-  left: 0;
-  top: 0;
-  width: 100%;
-  height: 100%;
 }
 .gallery .content li:hover {
   z-index: 4;
   cursor: pointer;
 }
 .gallery .content img.img-thumbnail {
+  width: 100%;
   height: 100%;
   transition: transform 200ms;
 }
@@ -46,5 +40,9 @@
 .gallery .show span {
   margin: 8px;
   cursor: pointer;
+}
+.gallery .show .spinner-holder {
+  left: 50%;
+  bottom: 10%;
 }
 /*# sourceMappingURL=gallery.css.map */

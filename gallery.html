@@ -3,10 +3,11 @@
 <head>
   <meta charset="UTF-8">
   <title>画廊</title>
-  <link rel="stylesheet" href="lib/bootstrap.min.css">
+  <link rel="stylesheet" href="https://cdn.bootcdn.net/ajax/libs/twitter-bootstrap/5.2.3/css/bootstrap.min.css">
   <link rel="stylesheet" href="css/gallery.css">
 </head>
 <body>
+<script src="js/common.js"></script>
 
 <div class="container gallery position-relative">
   <div class="content">
@@ -31,11 +32,15 @@
   <div class="show fixed-top z-5">
     <span class="btn-close btn-close-white float-end"></span>
     <img class="mw-100 mh-100" alt="" src="">
+    <div class="spinner-holder position-fixed">
+      <div class="spinner-border text-info">
+      </div>
+    </div>
   </div>
 </div>
 
-<script src="lib/popper.min.js"></script>
-<script src="lib/bootstrap.min.js"></script>
-<script id="js" src="js/gallery.js"></script>
+<script src="https://cdn.bootcdn.net/ajax/libs/popper.js/2.11.7/esm/popper.min.js" type="module"></script>
+<script src="https://cdn.bootcdn.net/ajax/libs/twitter-bootstrap/5.2.3/js/bootstrap.min.js"></script>
+<script src="js/gallery.js"></script>
 </body>
 </html>
