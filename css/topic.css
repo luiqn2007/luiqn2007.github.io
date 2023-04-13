@@ -9,6 +9,7 @@
   z-index: 5;
   transform: translateX(80%);
   transition: transform 200ms;
+  background-color: rgba(173, 216, 230, 0.3);
 }
 .topics:hover {
   transform: translateX(0);
@@ -42,5 +43,21 @@
 .content .display-all .card {
   width: 12rem;
   margin: 8px;
+}
+.content .display-all .card.state1 {
+  background-color: rgba(0, 255, 255, 0.7);
+}
+.content .display-all .card.state2 {
+  background-color: rgba(0, 255, 255, 0.3);
+}
+.content .display-all .card.state3 {
+  background-color: rgba(0, 255, 255, 0.1);
+}
+.content .display-all .card.state4 {
+  background-color: rgba(128, 128, 128, 0.2);
+}
+.content .display-all .card.state5,
+.content .display-all .card.state6 {
+  cursor: pointer;
 }
 /*# sourceMappingURL=topic.css.map */

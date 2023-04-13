@@ -9,6 +9,7 @@
   z-index: 5;
   transform: translateX(80%);
   transition: transform 200ms;
+  background-color: rgba(lightblue, 0.3);
 }
 
 .topics:hover {
@@ -49,4 +50,32 @@
 .content .display-all .card {
   width: 12rem;
   margin: 8px;
+}
+
+.content .display-all .card.state1 {
+  background-color: rgba(cyan, 0.7);
+}
+
+.loop1_progress(@i: 1) when(@i <= 100) {
+  .content .display-all .card.state1.progress@{i} {
+    background-color: rgba(cyan, (@i / 100.0));
+  }
+  .loop1_progress((@i + 1))
+}
+
+.content .display-all .card.state2 {
+  background-color: rgba(cyan, 0.3);
+}
+
+.content .display-all .card.state3 {
+  background-color: rgba(cyan, 0.1);
+}
+
+.content .display-all .card.state4 {
+  background-color: rgba(gray, 0.2);
+}
+
+.content .display-all .card.state5,
+.content .display-all .card.state6 {
+  cursor: pointer;
 }
